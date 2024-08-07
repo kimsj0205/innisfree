@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>innisfree</title>
+
+  <!-- reset cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <!-- google icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <!-- gsap cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <!-- gsap scrollToPlugin cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <!-- swiper cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>  
+  <!-- scroll magic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+  <!-- lodash cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+  
+
+  <!-- user -->
+  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <script defer src="./js/youtube.js"></script>
+  <script defer src="./js/custom.js"></script>
+</head>
+<body>
+  <header>
+    <div class="inner">
+      <div class="upMenu">
+        <h1><a href=""><img src="./image/logo.png" alt=""></a></h1>
+        <div class="sub-menu">
+          <ul class="menu">
+            <li><a href="javascript:void(0);">로그인</a></li>
+            <li><a href="javascript:void(0);">마이페이지</a></li>
+            <li><a href="javascript:void(0);">장바구니</a></li>
+          </ul>
+          <div class="search">
+            <input type="text"/>
+            <span class="material-icons">search</span>
+          </div>
+        </div>
+      </div>
+      <ul class="gnbList">
+        <li><a href="javascript:void(0);">특가</a></li>
+        <li><a href="javascript:void(0);">이벤트</a></li>
+        <li><a href="javascript:void(0);">베스트</a></li>
+        <li><a href="javascript:void(0);">쇼케이스</a></li>
+        <li><a href="javascript:void(0);">라이브</a></li>
+        <li><a href="javascript:void(0);">FOR ME</a></li>
+      </ul>
+      <div class="main-menu">
+        <span class="material-icons hambergerBtn">menu</span>
+      </div>
+    </div>
+    <nav class="drop-category dsnone">
+      <div class="inner">
+        <ul class="list">
+          <li><a href="javascript:void(0);">스킨케어</a>
+            <ul class="sub-list">
+              <li><a href="javascript:void(0);">에센스/세럼/앰플</a></li>
+              <li><a href="javascript:void(0);">로션/크림</a></li>
+              <li><a href="javascript:void(0);">스킨/토너/미스트</a></li>
+              <li><a href="javascript:void(0);">립/아이케어</a></li>
+              <li><a href="javascript:void(0);">선케어</a></li>
+              <li><a href="javascript:void(0);">오일/마사지</a></li>
+              <li><a href="javascript:void(0);">클렌징</a></li>
+              <li><a href="javascript:void(0);">팩/마스크</a></li>
+              <li><a href="javascript:void(0);">기획 세트</a></li>
+              <li><a href="javascript:void(0);">기타</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0);">메이크업</a>
+            <ul class="sub-list">
+              <li><a href="javascript:void(0);">페이스메이크업</a></li>
+              <li><a href="javascript:void(0);">아이메이크업</a></li>
+              <li><a href="javascript:void(0);">립메이크업</a></li>
+              <li><a href="javascript:void(0);">네일</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0);">남성</a>
+            <ul class="sub-list">
+              <li><a href="javascript:void(0);">스킨케어</a></li>
+              <li><a href="javascript:void(0);">클렌징</a></li>
+              <li><a href="javascript:void(0);">기획 세트</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0);">헤어/바디/펫</a>
+            <ul class="sub-list">
+              <li><a href="javascript:void(0);">펫</a></li>
+              <li><a href="javascript:void(0);">핸드/풋케어</a></li>
+              <li><a href="javascript:void(0);">바디워시/청결제</a></li>
+              <li><a href="javascript:void(0);">헤어 에센스/미스트</a></li>
+              <li><a href="javascript:void(0);">샴푸/트리트먼트</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0);">기획 세트</a>
+            <ul class="sub-list">
+              <li><a href="javascript:void(0);">기획 세트</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0);">미용소품</a>
+            <ul class="sub-list">
+              <li><a href="javascript:void(0);">브러시</a></li>
+              <li><a href="javascript:void(0);">네일 소품</a></li>
+              <li><a href="javascript:void(0);">헤어/바디 소품</a></li>
+              <li><a href="javascript:void(0);">퍼프/스펀지</a></li>
+              <li><a href="javascript:void(0);">화장솜/면봉/기름종이</a></li>
+              <li><a href="javascript:void(0);">클렌징 소품</a></li>
+              <li><a href="javascript:void(0);">기타 소품</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:void(0);">피부고민</a>
+            <ul class="sub-list">
+              <li><a href="javascript:void(0);">수분/보습/속건조</a></li>
+              <li><a href="javascript:void(0);">모공/피지/블랙헤드</a></li>
+              <li><a href="javascript:void(0);">주름/탄력</a></li>
+              <li><a href="javascript:void(0);">트러블/리페어</a></li>
+              <li><a href="javascript:void(0);">각질/피부결</a></li>
+              <li><a href="javascript:void(0);">잡티/피부톤</a></li>
+              <li><a href="javascript:void(0);">영양/토탈안티에이징</a></li>
+              <li><a href="javascript:void(0);">진정/민감</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+  </nav>
+  </header>
+  <section class="visual">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="name">
+            <span class="slide_title">레티놀 꿀조합!</span>
+            <span class="slide_title2">함께 쓰면 피부 컨디션 UP!</span>
+            <div class="price">
+              <span class="sale">64,400</span>
+              <span class="cost">92,000</span>
+            </div>
+          </div>
+          <img src="./image/main_slide1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <div class="name">
+            <span class="slide_title">판매1위 수분에센스</span>
+            <span class="slide_title2">대용량 출시 기념 특가!</span>
+            <div class="price">
+              <span class="sale">33,750</span>
+              <span class="cost">45,000</span>
+            </div>
+          </div>
+          <img src="./image/main_slide2.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          
+          <div class="name">
+            <span class="oneone">1+1</span>
+            <span class="slide_title">데일리 딥 클렌징!</span>
+            <span class="slide_title2">하나 더 사면 하나를 더!</span>
+          </div>
+          <img src="./image/main_slide3.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <div class="name">
+            <span class="oneone">1+1</span>
+            <span class="slide_title">판매1위 수분에센스</span>
+            <span class="slide_title2">대용량 출시 기념 특가!</span>
+            <div class="price">
+              <span class="sale">33,750</span>
+              <span class="cost">92,000</span>
+            </div>
+          </div>
+          <img src="./image/main_slide4.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <div class="name">
+            <span class="slide_title">함께쓰면 효과 UP!</span>
+            <span class="slide_title2">블랙티 듀오 특가</span>
+            <div class="price">
+              <span class="sale">59,840</span>
+              <span class="cost">88,000</span>
+            </div>
+          </div>
+          <img src="./image/main_slide5.jpg" alt="">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"><span class="material-icons">arrow_back_ios</span></div>
+      <div class="swiper-button-next"><span class="material-icons">arrow_forward_ios</span></div>
+    </div>
+  </section>
+  <section class="notice">
+    <div class="notice-line">
+      <div class="bg-left"></div>
+      <div class="bg-right"></div>
+      <div class="inner">
+        
+        <div class="inner-left">
+          <h2>공지사항</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">7월 회원가입 이벤트 당첨자 발표</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">개인정보 보안 강화 안내</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="javascript:void(0)">체험단 이벤트 당첨자 안내</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inner-right">
+          <h2>진행중인 이벤트 바로가기</h2>
+          <div class="toggle-event">
+            <div class="material-icons">upload</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="event-page">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="event-group">
+              <img src="./image/notice_slide1.jpg" alt="">
+              <div class="event_info">
+                <div class="name">앵콜요청으로 소량 재입고<br>라인프렌즈 콜라보</div>
+                <div class="option">BEST [라인프렝즈 샐리백+파우치 증정] 비타C 세럼 스페셜 세트</div>
+                <div class="hashtag"><span>#비타민C</span><span>#잡티세럼</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="event-group">
+              <img src="./image/notice_slide2.jpg" alt="">
+              <div class="event_info">
+                <div class="name">패밀리 세일 기념 27%할인 블루 오리진 엠플</div>
+                <div class="option">블루 오리진 엠플</div>
+                <div class="hashtag"><span>#비타민C</span><span>#잡티세럼</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="event-group">
+              <img src="./image/notice_slide3.jpg" alt="">
+              <div class="event_info">
+                <div class="name">
+                  NEW [대용량] 그린티크림 
+                  50mL가격에 용량은 2배+ 
+                </div>
+                <div class="option"> BEST [대용량]그린티 씨드 히알루론산 크림 [튜브]
+                </div>
+                <div class="hashtag"><span>#저자극</span><span>#그린티</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="event-group">
+              <img src="./image/notice_slide4.jpg" alt="">
+              <div class="event_info">
+                <div class="name">녹차밭을 오롯이 담은 그린티 에썽스 세트</div>
+                <div class="option">BEST 그린티 에썽스 익스클루시브 세트</div>
+                <div class="hashtag"><span>#선물추천</span><span>#속건조전용세럼</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <div class="product-rank">
+    <div class="inner">
+      <div class="text-group">
+        <h3>8월의 BEST 아이템</h3>
+        <span>~50%</span>
+        <a href="javascript:void(0)">더보기</a>
+      </div>
+      <div class="rank-page">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="img">
+                <div class="box1"></div>
+              </div>
+              <div class="text">
+                <h3>노세범 모이스처 파우더</h3>
+                <div class="priceBox">
+                  <span class="price">4,500</span>
+                  <span class="sale">~50%</span>
+                  <span class="cost">9,000</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img">
+                <div class="box2"></div>
+              </div>
+              <div class="text">
+                <h3>노세범 미네랄 팩트</h3>
+                <div class="priceBox">
+                  <span class="price">7,500</span>
+                  <span class="sale">~50%</span>
+                  <span class="cost">15,000</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img">
+                <div class="box3"></div>
+              </div>
+              <div class="text">
+                <h3>[쿠로미X이니스프리]노세범 미네랄 파우더</h3>
+                <div class="priceBox">
+                  <span class="price">4,500</span>
+                  <span class="sale">~50%</span>
+                  <span class="cost">9,000</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img">
+                <div class="box4"></div>
+              </div>
+              <div class="text">
+                <h3>그린티 아미노 수분 폼 클린징</h3>
+                <div class="priceBox">
+                  <span class="price">9,100</span>
+                  <span class="sale">~30%</span>
+                  <span class="cost">13,000</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img">
+                <div class="box5"></div>
+              </div>
+              <div class="text">
+                <h3>심플라벨 래스팅 펜슬 브로우</h3>
+                <div class="priceBox">
+                  <span class="price">6,500</span>
+                  <span class="sale">~50%</span>
+                  <span class="cost">13,000</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img">
+                <div class="box6"></div>
+              </div>
+              <div class="text">
+                <h3>노세범 미네랄 팩트 / 메이크업픽서 지성피부 기름종이파우더 피니쉬팩트
+                </h3>
+                <div class="priceBox">
+                  <span class="price">7,500</span>
+                  <span class="sale">~50%</span>
+                  <span class="cost">15,000</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img">
+                <div class="box7"></div>
+              </div>
+              <div class="text">
+                <h3>노세범 AC 파우더</h3>
+                <div class="priceBox">
+                  <span class="price">6,000</span>
+                  <span class="sale">~50%</span>
+                  <span class="cost">12,000</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="img">
+                <div class="box8"></div>
+              </div>
+              <div class="text">
+                <h3>심플라벨 워터프루프 펜슬라이너</h3>
+                <div class="priceBox">
+                  <span class="price">6,500</span>
+                  <span class="sale">~50%</span>
+                  <span class="cost">12,000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <section class="youtube">
+    <div class="youtube__area">
+      <div class="youtube__cover"></div>
+      <div id="player"></div>
+    </div>
+    <div class="youtube__cover"></div>
+  </section>
+  <section class="season-product scroll-spy">
+    <div class="product-page1">
+      <h4 class="title">원영's pick!</h4>
+      <p>이니스프리의 뮤즈 원영이가 직접 고른 BEST</p>
+      <div class="inner">
+        <div class="img_group1">
+          <img src="./image/season_product1.png" class="person1 back-to-position to-right show delay-0" alt="">
+          <img src="./image/product1.png" class="product1 back-to-position to-right show delay-1" alt="">
+        </div>
+        <div class="text-group">
+          <h5><span class="pick">원영이의 여름 선크림</span>히알루론 수분 선크림 SPF50+ PA++++</h5>
+          <p>수분 에센스 바른 듯<br> 백탁없이 가볍고 촉촉하게 흡수되어<br> 매일 발라도 부담없는 데일리 수분 자차</p>
+          <div class="hashtag">
+            <span>#수분선크림</span>
+            <span>#유기자차</span>
+            <span>#히알루론산</span>
+            <span>#속건조케어</span>
+          </div>
+          <a class="btn btn-right">자세히보기<span class="material-icons">arrow_forward</span></a>
+        </div>
+      </div>
+
+    </div>
+    <div class="product-page2">
+      <div class="product-page2-bg back-to-position show delay-0">
+      </div>
+      <div class="inner">
+        <div class="img_group1">
+          <img src="./image/season_product2.png" class="person1 back-to-position to-left show delay-2" alt="">
+          <img src="./image/product2.png" class="product2 back-to-position to-left show delay-3" alt="">
+        </div>
+        <div class="text-group">
+          <h5><span class="pick">원영이의 BEST 수분크림</span>그린티 히알루론산 수분 선세럼 (50mL+50mL)</h5>
+          <p>그린티 씨드 히알루론산 세럼의 핵심 성분인 그린티 추출물과 캡슐 히알루론산을 담은 포뮬러로 수분 세럼처럼 산뜻하고 크림처럼 촉촉한 수분 선세럼</p>
+          <div class="hashtag">
+            <span>#수분선세럼</span>
+            <span>#자외선차단제</span>
+          </div>
+          <a class="btn">자세히보기<span class="material-icons">arrow_forward</span></a>
+        </div>
+      </div>
+      <div class="animated-title">
+        <div class="track">
+          <div class="content">
+            <p>INNISFREE&nbsp;</p>
+            <p>INNISFREE&nbsp;</p>
+            <p>INNISFREE&nbsp;</p>
+            <p>INNISFREE&nbsp;</p>
+            <p>INNISFREE&nbsp;</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="animated-title">
+      <div class="track">
+        <div class="content">
+          <p>INNISFREE&nbsp;</p>
+          <p>INNISFREE&nbsp;</p>
+          <p>INNISFREE&nbsp;</p>
+          <p>INNISFREE&nbsp;</p>
+          <p>INNISFREE&nbsp;</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="join-membership reverse scroll-spy">
+    <div class="membership-bg bigbg show delay-0"><img src="./image/join_membership_bg.jpg" alt=""></div>
+      <div class="inner">
+        <div class="medal">
+          <div class="front text-group">
+            <img src="./image/logo.png" alt="">
+          </div>
+          <div class="text-group back">
+            <h5>JOIN <br>MEMBERSHIP</h5>
+            <p>이니스프리를 회원가입하고 더욱 특별한 혜택을 만나보세요!</p>
+            <span>이니스프리만의 특별함을 경험할 수 있는 최상의 제품<br>이니스프리와 완벽한 어울림을 자랑하는 제품<br>다양한 시도와 디자인으로 가치를 더하는 제품<br>어떤 화장품을 골라야 할지 고민일 때 가장 좋은 방법 이니스프리</span>
+            <a class="btn btn-reverse">바로가기</a>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  <footer>
+    <div class="inner">
+      <div class="menu">
+        <ul class="navigation">
+          <li><a href="">서비스 이용약관</a></li>
+          <li><a href="">개인정보처리방침</a></li>
+          <li><a href="">영상정보처리기기 운영/관리 방침</a></li>
+          <li><a href="">위치기반서비스 이용약관</a></li>
+          <li><a href="">공지사항</a></li>
+          <li><a href="">임직원서비스</a></li>
+        </ul>
+        <ul class="sns-box">
+          <li><a href="javascript:void(0);"><i class="fa-brands fa-x-twitter"></i></a></li>
+          <li><a href="javascript:void(0);"><i class="fa-brands fa-youtube"></i></a></li>
+          <li><a href="javascript:void(0);"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="javascript:void(0);"><i class="fa-brands fa-facebook-f"></i></a></li>
+        </ul>
+      </div>
+      <div class="footinfo">
+        <div class="info">
+          <h2><img src="./image/logo.png" alt=""></h2>
+          <p>(주)이니스프리 서울특별시 용산구 한강대로 100(한강로2가) 7층 이니스프리 대표이사 최민정</p>
+          <p>사업자 등록번호 106-86-68127 통신판매신고번호 2018-서울용산-0014 제품 문의 : 080-380-0114 FAX 02-6040-7108</p>
+          <p>이메일 주소 innisfree@innisfree.com 비즈니스제휴/입점문의 partner.biz@innisfree.com</p>
+          <p>이메일 주소 무단 수집 거부 개인정보 보호책임자 최민정 호스팅 서비스 제공자 ㈜이니스프리</p>
+          <div class="copyRight">Copyright © 2023 Innisfree. All Rights Reserved.</div>
+          <div class="lgEscrow">
+            <p>토스페이먼츠(주)의 에스크로 서비스 가입 저희 쇼핑몰은 고객님의 안전한 거래를 위해 무통장입금 거래에 대해 구매안전서비스를 적용하고 있습니다.</p>
+            <a href="javascript:void(0)">토스페이먼츠 구매안전 서비스 가입확인</a>
+          </div>
+          
+        </div>
+        <div class="service">
+          <dl>
+            <dt>고객 서비스 센터 이용안내</dt>
+            <dd>080-380-0114(수신자 요금 부담)</dd>
+            <dd>운영시간 AM 09:00 ~ PM 18:00 (주말 및 공휴일 휴무)</dd>
+            <dd>점심시간 PM 12:00 ~ PM 13:00</dd>
+            <dd><a href="javascript:void(0)">1:1상담작성</a></dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+  <div class="to-top">
+    <div class="material-icons">arrow_upward</div>
+  </div>
+</body>
+</html>
